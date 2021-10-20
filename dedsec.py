@@ -90,6 +90,14 @@ ______  _____ ______  _____  _____  _____
 |___/  \____/ |___/  \____/ \____/  \____/
                                           
 
+
+
+
+
+
+
+
+
  \033[91m"""
 def menu():
     print (darkarmylogo + """\033[1m
@@ -107,7 +115,7 @@ def menu():
    {0}--Update The DARKARMY 
    {99}-Exit
  """)
-    choice = raw_input("DARKARMY~# ")
+    choice = raw_input("DEDSEC~# ")
     os.system('clear')
     if choice == "1":
         info()
